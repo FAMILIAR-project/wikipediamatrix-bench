@@ -6,6 +6,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 
+import org.apache.commons.csv.CSVParser;
 import org.junit.Test;
 
 /*
@@ -39,6 +40,8 @@ public class BenchTest {
 	       System.out.println("Wikipedia url: " + wurl);
 	       // TODO: do something with the Wikipedia URL 
 	       // (ie extract relevant tables for correct URL, with the two extractors)
+	       
+	       
 		    
 	       
 	       // for exporting to CSV files, we will use mkCSVFileName 
@@ -70,6 +73,23 @@ public class BenchTest {
 
 	private String mkCSVFileName(String url, int n) {
 		return url.trim() + "-" + n + ".csv";
+	}
+	
+	
+	
+	@Test
+	public void testCanon() {
+		
+		/*MatrixExtractor extractor = new MatrixExtractor("");
+		String fileoutputName = "output/html/canon.csv";
+		extractor.exportToCSV(fileoutputName);*/
+		
+		// read the CSV file 
+		//CSVParser parser = ..;
+		//assertNotNull(parser);
+		
+		
+		
 	}
 
 }
